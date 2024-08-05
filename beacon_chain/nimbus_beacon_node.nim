@@ -528,6 +528,7 @@ proc initFullNode(
   dag.setReorgCb(onChainReorg)
 
   node.dag = dag
+  node.list = clist
   node.blobQuarantine = blobQuarantine
   node.quarantine = quarantine
   node.attestationPool = attestationPool
