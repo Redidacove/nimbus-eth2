@@ -1008,7 +1008,7 @@ OK: 1/1 Fail: 0/1 Skip: 0/1
 OK: 14/14 Fail: 0/14 Skip: 0/14
 ## Validator change pool testing suite
 ```diff
-+ addValidatorChangeMessage/getAttesterSlashingMessage                                       OK
++ addValidatorChangeMessage/getAttesterSlashingMessage (phase0)                              OK
 + addValidatorChangeMessage/getBlsToExecutionChange (post-capella)                           OK
 + addValidatorChangeMessage/getBlsToExecutionChange (pre-capella)                            OK
 + addValidatorChangeMessage/getProposerSlashingMessage                                       OK
