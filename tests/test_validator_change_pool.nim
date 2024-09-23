@@ -95,7 +95,7 @@ suite "Validator change pool testing suite":
               cfg, forkyState.data).proposer_slashings.lenu64 ==
             min(i + 1, MAX_PROPOSER_SLASHINGS)
 
-  test "addValidatorChangeMessage/getAttesterSlashingMessage":
+  test "addValidatorChangeMessage/getAttesterSlashingMessage (phase0)":
     for i in 0'u64 .. MAX_ATTESTER_SLASHINGS + 5:
       for j in 0'u64 .. i:
         let
@@ -113,7 +113,7 @@ suite "Validator change pool testing suite":
       withState(dag.headState):
         check:
           pool[].getBeaconBlockValidatorChanges(
-              cfg, forkyState.data).attester_slashings.lenu64 ==
+              cfg, forkyState.data).phase0_attester_slashings.lenu64 ==
             min(i + 1, MAX_ATTESTER_SLASHINGS)
 
   test "addValidatorChangeMessage/getVoluntaryExitMessage":
