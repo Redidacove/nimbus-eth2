@@ -67,6 +67,15 @@ OK: 4/4 Fail: 0/4 Skip: 0/4
 + sanity check state diff roundtrip [Preset: mainnet]                                        OK
 ```
 OK: 26/26 Fail: 0/26 Skip: 0/26
+## Beacon chain file test suite
+```diff
++ Auto check/repair test (missing data)                                                      OK
++ Auto check/repair test (missing footer)                                                    OK
++ Auto check/repair test (missing last chunk)                                                OK
++ Auto check/repair test (only header)                                                       OK
++ Fixture file validation                                                                    OK
+```
+OK: 5/5 Fail: 0/5 Skip: 0/5
 ## Beacon state [Preset: mainnet]
 ```diff
 + Smoke test initialize_beacon_state_from_eth1 [Preset: mainnet]                             OK
@@ -1126,4 +1135,4 @@ OK: 2/2 Fail: 0/2 Skip: 0/2
 OK: 9/9 Fail: 0/9 Skip: 0/9
 
 ---TOTAL---
-OK: 763/768 Fail: 0/768 Skip: 5/768
+OK: 768/773 Fail: 0/773 Skip: 5/773
